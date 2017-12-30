@@ -1,12 +1,15 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>Agregar Notas</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  Agrega tus notas aquí
+  <form (ngSubmit)="saveNote(f.value)" #f="ngForm">
+    <ion-item>
+      <ion-label>Titulo</ion-label>
+      <ion-textarea name="title" ngModel></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit">Guardar nota</button>
+  </form>
 </ion-content>
