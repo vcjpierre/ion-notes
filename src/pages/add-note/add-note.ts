@@ -15,7 +15,7 @@ export class AddNotePage {
     private noteService: NoteService){
     }
 
-  saveNote(value: { title: string }) {
-    this.noteService.saveNote(value);
-  }
+  // saveNote(value: { title: string }) {
+  //   this.noteService.saveNote(value);
+  // }
 }
