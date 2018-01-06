@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { Note } from '../../models/note.module';
+import { Note } from '../../models/note.model';
 
 @Injectable()
 export class NoteService{

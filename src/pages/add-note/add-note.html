@@ -5,11 +5,23 @@
 </ion-header>
 
 <ion-content padding>
-  <form (ngSubmit)="saveNote(f.value)" #f="ngForm">
+  <form [formGroup]="formGroup" (ngSubmit)="saveNote(formGroup.value)">
+    <ion-item>
+      <ion-label>Fecha</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" formControlName="date"></ion-datetime>
+    </ion-item>
     <ion-item>
       <ion-label>Titulo</ion-label>
-      <ion-textarea name="title" ngModel></ion-textarea>
+      <ion-input name="title" type="text" formControlName="title" required></ion-input>
+      <div class="alert" *ngIf="!formGroup.controls['title'].valid &&
+      formGroup.controls['title'].touched">{{ titleAlert }}</div>
     </ion-item>
-    <button ion-button type="submit">Guardar nota</button>
+    <ion-item>
+      <ion-label>Nota</ion-label>
+      <ion-input name="content" type="text" formControlName="content" required></ion-input>
+      <div class="alert" *ngIf="!formGroup.controls['content'].valid &&
+      formGroup.controls['content'].touched">{{ contentAlert }}</div>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!formGroup.valid">Guardar nota</button>
   </form>
 </ion-content>
