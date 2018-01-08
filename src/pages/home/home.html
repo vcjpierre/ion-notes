@@ -1,16 +1,23 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Mis Notas
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Mis Notas
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="addNote()">
+              <ion-icon ios="ios-add" md="md-add"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
-      {{ note.title }}
-    </button>
-  </ion-list>
-  <button ion-button (click)="addNote()">Agregar nota</button>
+    <ion-list>
+        <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
+            <span class="date">{{ note.date }}</span>{{ note.title }}
+        </button>
+    </ion-list>
+    <ion-footer>
+        <button ion-button full (click)="addNote()">Agregar nota</button>
+    </ion-footer>
 </ion-content>

@@ -1,27 +1,33 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Agregar Notas</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Agregar Nota</ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <form [formGroup]="formGroup" (ngSubmit)="saveNote(formGroup.value)">
-    <ion-item>
-      <ion-label>Fecha</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY" formControlName="date"></ion-datetime>
-    </ion-item>
-    <ion-item>
-      <ion-label>Titulo</ion-label>
-      <ion-input name="title" type="text" formControlName="title" required></ion-input>
-      <div class="alert" *ngIf="!formGroup.controls['title'].valid &&
-      formGroup.controls['title'].touched">{{ titleAlert }}</div>
-    </ion-item>
-    <ion-item>
-      <ion-label>Nota</ion-label>
-      <ion-input name="content" type="text" formControlName="content" required></ion-input>
-      <div class="alert" *ngIf="!formGroup.controls['content'].valid &&
-      formGroup.controls['content'].touched">{{ contentAlert }}</div>
-    </ion-item>
-    <button ion-button type="submit" [disabled]="!formGroup.valid">Guardar nota</button>
-  </form>
+<ion-content padding fixed>
+    <form [formGroup]="formGroup" (ngSubmit)="saveNote(formGroup.value)">
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label>Fecha</ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" formControlName="date"></ion-datetime>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Titulo</ion-label>
+                    <ion-input name="title" type="text" formControlName="title" required></ion-input>
+                    <div class="alert" *ngIf="!formGroup.controls['title'].valid &&
+                  formGroup.controls['title'].touched">{{ titleAlert }}</div>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Nota</ion-label>
+                    <ion-input name="content" type="text" formControlName="content" required></ion-input>
+                    <div class="alert" *ngIf="!formGroup.controls['content'].valid &&
+                  formGroup.controls['content'].touched">{{ contentAlert }}</div>
+                </ion-item>
+            </ion-col>
+            <ion-col col-12>
+                <button ion-button full type="submit" [disabled]="!formGroup.valid">Guardar nota</button>
+            </ion-col>
+        </ion-row>
+    </form>
 </ion-content>

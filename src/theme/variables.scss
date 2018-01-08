@@ -52,7 +52,9 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
+$text-input-md-highlight-color: color($colors, light);
+$text-input-md-highlight-color-valid: color($colors, light);
+$text-input-md-highlight-color-invalid: color($colors, light);
 
 
 
