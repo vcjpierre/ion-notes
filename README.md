@@ -27,8 +27,8 @@ System:
 
 ## Screenshots
 
-<p align="center"> 
-<img src="src/assets/demo_1.jpg">
-<img src="src/assets/demo_1.jpg">
-<img src="src/assets/demo_1.jpg">
+<p float="left"> 
+<img src="src/assets/demo_1.jpg" width="270">
+<img src="src/assets/demo_1.jpg" width="270">
+<img src="src/assets/demo_1.jpg" width="270">
 </p>
