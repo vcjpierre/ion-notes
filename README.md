@@ -29,6 +29,6 @@ System:
 
 <p float="left"> 
 <img src="src/assets/demo_1.jpg" width="270">
-<img src="src/assets/demo_1.jpg" width="270">
-<img src="src/assets/demo_1.jpg" width="270">
+<img src="src/assets/demo_2.jpg" width="270">
+<img src="src/assets/demo_3.jpg" width="270">
 </p>
