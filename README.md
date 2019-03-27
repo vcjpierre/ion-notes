@@ -3,9 +3,9 @@
 ## Screenshots
 
 <p align="center"> 
-    <img src="src/assets/demo_1.jpg" width="270">
-    <img src="src/assets/demo_2.jpg" width="270">
-    <img src="src/assets/demo_3.jpg" width="270">
+    <img src="src/assets/screenshots/ss_1.jpg" width="270">
+    <img src="src/assets/screenshots/ss_2.jpg" width="270">
+    <img src="src/assets/screenshots/ss_3.jpg" width="270">
 </p>
 
 
