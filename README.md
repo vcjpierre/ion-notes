@@ -1,5 +1,14 @@
 # Ionic Notes App  
 
+## Screenshots
+
+<p align="center"> 
+    <img src="src/assets/demo_1.jpg" width="270">
+    <img src="src/assets/demo_2.jpg" width="270">
+    <img src="src/assets/demo_3.jpg" width="270">
+</p>
+
+
 ## Ionic Info
 
 ```
@@ -24,11 +33,3 @@ System:
     npm  : 6.1.0
     OS   : Windows 10
 ```
-
-## Screenshots
-
-<p float="left"> 
-<img src="src/assets/demo_1.jpg" width="270">
-<img src="src/assets/demo_2.jpg" width="270">
-<img src="src/assets/demo_3.jpg" width="270">
-</p>
